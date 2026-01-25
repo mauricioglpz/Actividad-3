@@ -348,16 +348,58 @@ transition: 0.5s;
     }
 }
 
-.footer{
-    width:100;
+.footer {
+    width: 100%;
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
+    background: #000; 
+    color: #fff;
 }
 
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
+.footer h4 {
+    margin-bottom: 15px;
     font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    color: #888; 
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.icons {
+    margin-bottom: 30px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.icons .fa-brands {
+    font-size: 28px;
+    margin: 0 15px;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.icons .fa-brands:hover {
+    color: #BAB8B5; 
+    transform: translateY(-5px); 
+}
+
+.copyright {
+    font-size: 11px !important;
+    color: #555 !important;
+    margin-top: 20px;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    display: inline-block;
+    width: 60%;
 }
 
 html {
@@ -436,11 +478,57 @@ html {
     }
 }
 
+/* links de google maps pa localidades */
+.campus-col a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.task-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 
 
+/* nueva informacion añadida del contenedor de tareas */
+#tareas .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 5% auto;
+    width: 100%;
+}
 
+.contact-col {
+    flex-basis: 100%; /* Ajusta el ancho del recuadro negro */
+    max-width: 800px; 
+    background: #111;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0 auto; 
+    text-align: center;
+}
 
+.task-input-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
 
+#addTaskBtn {
+    background-color: #fff !important; 
+    color: #000 !important; 
+    border: none;
+    font-weight: bold;
+    min-width: 150px;
+}
 
-
+#addTaskBtn:hover {
+    background-color: #BAB8B5 !important; 
+}
